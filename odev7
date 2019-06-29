@@ -1,0 +1,80 @@
+
+'''7.ODEV
+
+	--tipini ogrenmek istediginiz geometrik sekil icin
+	  1-ucgen
+	  2-dortgen
+	  ---->1
+		ucgenin 1.kenar uzunlugunu giriniz=12
+		ucgenin 2.kenar uzunlugunu giriniz=14
+		ucgenin 3.kenar uzunlugunu giriniz=20
+		bu ucgen cesitkenar ucgendir!
+
+	------>1
+		ucgenin 1.kenar uzunlugunu giriniz=12
+		ucgenin 2.kenar uzunlugunu giriniz=12
+		ucgenin 3.kenar uzunlugunu giriniz=14
+		bu ucgen ikizkenar ucgendir!
+
+	------>1
+		ucgenin 1.kenar uzunlugunu giriniz=12
+		ucgenin 2.kenar uzunlugunu giriniz=12
+		ucgenin 3.kenar uzunlugunu giriniz=12
+		bu ucgen eskenar ucgendir!
+
+	------>1
+		ucgenin 1.kenar uzunlugunu giriniz=12
+		ucgenin 2.kenar uzunlugunu giriniz=25
+		ucgenin 3.kenar uzunlugunu giriniz=11
+		girmis oldugunuz uzunluk olculeri bir ucgen teskil etmiyor!
+
+	------>2
+		dortgenin 1.kenar uzunlugunu giriniz=12
+		dortgenin 2.kenar uzunlugunu giriniz=12
+		dortgenin 3.kenar uzunlugunu giriniz=12
+		dortgenin 4.kenar uzunlugunu giriniz=12
+		girmis oldugunuz olculere sahip olan sekil  karedir!
+
+	------>2
+		dortgenin 1.kenar uzunlugunu giriniz=12
+		dortgenin 2.kenar uzunlugunu giriniz=25
+		dortgenin 3.kenar uzunlugunu giriniz=12
+		dortgenin 4.kenar uzunlugunu giriniz=25
+		girmis oldugunuz olculere sahip olan sekil bir dikdorgendir!
+
+	------>2
+		dortgenin 1.kenar uzunlugunu giriniz=12
+		dortgenin 2.kenar uzunlugunu giriniz=13
+		dortgenin 3.kenar uzunlugunu giriniz=14
+		dortgenin 4.kenar uzunlugunu giriniz=15
+		girmis oldugunuz olculere sahip olan sekil bir cesitkenar dortgendir'''
+print('''-tipini ogrenmek istediginiz geometrik sekil icin
+	  1-ucgen
+	  2-dortgen''')
+secenek=int(input("1 yada 2  secenegini seciniz"))
+if secenek==1:
+    birinci_kenar=int(input("ucgenin 1. kenarini belirtiniz"))
+    ikinci_kenar=int(input("ucgenin 2. kenarini belirtiniz"))
+    ucuncu_kenar=int(input("ucgenin 3. kenarini belirtiniz"))
+    if birinci_kenar!=ikinci_kenar  and ikinci_kenar!=ucuncu_kenar and birinci_kenar!=ucuncu_kenar:
+        print("bu ucgen cesit kenar ucgendir")
+    if birinci_kenar==ikinci_kenar  and ikinci_kenar!=ucuncu_kenar:
+        print("bu ucgen ikiz kenar ucgendir")
+    if birinci_kenar!=ucuncu_kenar  and ikinci_kenar==ucuncu_kenar:
+        print("bu ucgen ikiz kenar ucgendir")
+    if birinci_kenar==ucuncu_kenar  and ikinci_kenar!=ucuncu_kenar:
+        print("bu ucgen ikiz kenar ucgendir")
+
+    if birinci_kenar==ikinci_kenar  and ikinci_kenar==ucuncu_kenar:
+        print("bu ucgen es kenar ucgendir")
+if secenek==2:
+    a= int(input("dortgenin 1. kenarini belirtiniz"))
+    b= int(input("dortgenin 2. kenarini belirtiniz"))
+    c= int(input("dortgenin 3. kenarini belirtiniz"))
+    d=int(input("dortgenin 4. kenarini belirtiniz"))
+    if  a==c and b==d and a!=b:
+        print("dikdortgen")
+    elif a==b and c==d:
+        print("kare")
+
+
