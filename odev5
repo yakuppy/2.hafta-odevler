@@ -1,0 +1,43 @@
+'''5.ODEV: ATM
+
+	--hangi islemi yapmak istediginizi seciniz
+	1-bakiye kontrol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [[[[[[[[
+	2-para yatirma
+	3-para cekme
+
+	--------->1
+	         hesabinizda 1000 euro para bulunmaktadir
+
+       --------->2
+		yatirmak istediginiz rakam=1250
+		hesabiniza 1250 euro para yatirildi
+		yeni bakiyeniz=2250
+
+	--------->3
+	       cekmek istediginiz tutar=250
+	       hesabinizdan 250 euro cekilmistir
+ 	       kalan bakiyeniz=750
+	--------->3
+	       cekmek istediginiz tutar=1250
+               bakiyeniz yetersiz!'''
+print('''hangi islemi yapmak istediginizi seciniz
+	1-bakiye kontrol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [[[[[[[[
+	2-para yatirma
+	3-para cekme''')
+bakiye_miktari=1000
+islem=int(input("islen numaranizi giriniz   :"))
+if islem==1:
+    print("hesabinizda 1000 euro para bulunmaltadir")
+if islem==2:
+    yatirilan_para=int(input("yatirmak istediginiz para miktarini giriniz:"))
+    print("hesabiniza {} euro para yatirildi".format(yatirilan_para))
+    print("yeni bakiyeniz   :",bakiye_miktari+yatirilan_para, "euro")
+if islem==3:
+    cekilen_tutar=int(input("cekmek istediginiz para miktarii giriniz"))
+    if bakiye_miktari>=cekilen_tutar:
+        print("hesabinizdan {} euro para cekilmiztir".format(cekilen_tutar))
+        print("kalan bakiyeniz   :",bakiye_miktari-cekilen_tutar,   "euro")
+    elif bakiye_miktari<cekilen_tutar:
+        print("bakiye yetersiz!!!")
+
+
