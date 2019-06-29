@@ -1,0 +1,95 @@
+'''4.ODEV: SAYI TAHMIN OYUNU  
+** tahmin
+edilmesi
+istenilen
+sayinin
+5
+oldugu
+varsayiminda
+
+--1) lütfen
+1
+ile
+10
+arasinda
+bir
+sayi
+tahmin
+edin: 3
+2) bilemediniz.tekrar
+bir
+sayi
+tahmin
+edin: 4
+3) yine
+olmadi.tekrar
+bir
+sayi
+tahmin
+edin: 3
+4) maalesef: (tekrar bir sayi tahmin edin: 2
+5)
+üzgünüz.tekrar
+bir
+sayi
+tahmin
+edin: 5
+tebrikler.besinci
+denemede
+bildiniz. ?
+
+veya
+
+- -1) lütfen
+1
+ile
+10
+arasinda
+bir
+sayi
+tahmin
+edin: 5
+tebrikler
+ilk
+denemede
+bildiniz! ???
+
+--1) lütfen
+1
+ile
+10
+arasinda
+bir
+sayi
+tahmin
+edin: 4
+2) bilemediniz.tekrar
+bir
+sayi
+tahmin
+edin: 3
+3) yine
+olmadi.tekrar
+bir
+sayi
+tahmin
+edin: 5
+tebrikler
+üçüncü
+denemede
+bildiniz. ??'''
+deneme_sayisi=0
+
+while True:
+    tahmin = int(input("lufen 1 ile 10 arasinda bir sayi tahmin ediniz"))
+    sayi=5
+    deneme_sayisi = deneme_sayisi + 1
+    
+
+    if tahmin==sayi:
+        print("tebrikler {} denemede bildiniz".format(deneme_sayisi))
+        break
+
+    elif tahmin!=sayi:
+        print("maalesef {} denemede bilemediniz tekrar deneyiniz".format(deneme_sayisi))
+
