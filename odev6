@@ -1,0 +1,27 @@
+print("1.vize notunuzun ders notuna etkisi %25 dur")
+vize1 = input("1. vize notunuzu giriniz:")
+print("2.vize notunuzun ders notuna etkisi %25 dur")
+vize2 = input("2. vize notunuzu giriniz:")
+print("final notunuzun ders notuna etkisi %50 dur")
+Final = input("Final notunu giriniz:")
+
+sonuc = int(vize1) * (2.5 / 10) + int(vize2) * (2.5 / 10) + int(Final) * (5 / 10)
+print("not ortalamaniz   :",sonuc)
+if (sonuc >= 90):
+    print("harf notu   :","AA")
+elif (sonuc >= 85):
+    print("harf notu   :","BA")
+elif (sonuc >= 80):
+    print("harf notu   :","BB")
+elif (sonuc >= 75):
+    print("harf notu   :","CB")
+elif (sonuc >= 70):
+    print("harf notu   :","CC")
+elif (sonuc >= 65):
+    print("harf notu   :","DC")
+elif (sonuc >= 60):
+    print("harf notu   :","DD")
+elif (sonuc >= 55):
+    print("harf notu   :","FD")
+elif (sonuc >= 50):
+    print("harf notu   :","FF")
