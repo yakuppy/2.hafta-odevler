@@ -1,0 +1,22 @@
+'''2.ODEV: UZAKLIK BIRIMI DONUSUMU
+
+	--12.0 km = 7.4399999999999995 mil
+	--12.0 mil = 19.35483870967742 km'''
+mil=1.6129032258064517
+km=0.62
+
+print("mil ve kilometre cevirim tablosuna hosgeldiniz")
+secim=int(input("mil km cevrimi icin 1'e, km mil cevirimi yapmak icin 2'ye basiniz"))
+if secim==1:
+    ceviri_1=float(input("kilometreye cevirmek istediginiz mil miktarini yaziniz  :"))
+    mil_miktari=ceviri_1*mil
+    print("{} mil {} km dir".format(ceviri_1,mil_miktari))
+elif secim == 2:
+    ceviri_2 = float(input("mile cevirmek istediginiz km miktarini yaziniz  :"))
+    km_miktari=ceviri_2*km
+    print("{} km {} mil dir".format(ceviri_2, km_miktari))
+else:
+    print("hatali secim yaptiniz")
+
+
+
