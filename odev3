@@ -1,0 +1,19 @@
+'''3.ODEV: PAROLA KARAKTER KONTROLU
+Kullanicidan 3-18 karakter arasinda bir username olusturmasini isteyin.
+Eger username’in uzunlugu 3’ten az veya 18’deb fazla ise gerekli uyariyi yapin ve kullaniciya tekrar username sorun.
+Sonrasinda kullanicidan 6 ile 12 karakter araliginda bir parola olusturmasini isteyin.
+Olusturulan parolanin 6dan kisa ya da uzun olmasi durumlarinda tekrar gerekli uyarilari yapin.
+Iki durumun sartlari da saglaniyorsa username ve parolayi hem ekrana printleyin hem de bir dosyaya kaydedin.'''
+
+username=input("Kullanici adinizi giriniz:")
+while len(username)<3 or len(username)>18:
+        print("lutfen 3 ile 18 karakter arasinda usarname olusturunuz")
+        username = input("Kullanici adinizi giriniz:")
+parola= input("Parolanizi giriniz:")
+while len(parola)<6 or len(parola)>12:
+         print("lutfen 6 ile 12 karakter arasinda parola olusturunuz")
+         parola = input("Parolanizi giriniz:")
+print("Kullanici adiniz:{}, Parolaniz:{}".format(username,parola))
+kullanci_bilgileri=open("Kullanicibilgileri.txt","w")
+print(username,parola,file=kullanci_bilgileri)
+
